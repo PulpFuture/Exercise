@@ -1,0 +1,62 @@
+
+body {
+    background: #222;
+    color: #555;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    color: navajowhite;
+    font-size: 3rem;
+    font-family: 'EB Garamond', serif;
+}
+
+.cards {
+    text-align: left;
+    display: flex;
+}
+
+.card {
+    background: gainsboro;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 4px 4px 15px 2px;
+    max-width: 15%;
+    transition: 0.2s;
+}
+
+.card:first-child {
+    margin-left: auto;
+}
+
+.card:last-child {
+    margin-right: auto;
+}
+
+.card:not(:first-child) {
+    margin-left: -6rem;
+}
+
+.card:hover,
+.card:focus-within {
+    transform: translateY(-1rem);
+    background: navajowhite;
+}
+
+.card:hover ~ .card, 
+.card:focus-within ~ .card {
+    transform: translateX(6rem);
+}
+
+.card a {
+    color: #444;
+    text-decoration: none;
+}
